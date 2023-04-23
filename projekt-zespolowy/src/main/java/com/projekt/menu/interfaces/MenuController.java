@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class MenuController {
 
 	static final String MENU_URL = "/";
-	private static final String MENU_VIEW_NAME = "static/index.html";
+	private static final String MENU_VIEW_NAME = "index.html";
 
 	@GetMapping
 	String getMenuView() {
