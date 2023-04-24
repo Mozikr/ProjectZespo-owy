@@ -18,6 +18,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
 
+import com.projekt.game_project.domain.GameProject;
 import com.projekt.game_project.interfaces.GameProjectForm;
 
 
@@ -49,13 +50,12 @@ public class GameProjectAppService {
 
 	public void saveOrUpdateProject(GameProjectForm gameProjectForm) {
 
-		if (gameProjectForm.getId() == null) {
+		GameProject gameProject = new GameProject(gameProjectForm.getId(),
+			gameProjectForm.getTitle(),
+			gameProjectForm.getShortDescription(),
+			gameProjectForm.getLongDescription(),
+			gameProjectForm.getGameUrl());
 
-			gameProjectRepository.saveProject(gameProjectForm);
-		}
-		else {
-
-			gameProjectRepository.updateProject(gameProjectForm);
-		}
+		gameProjectRepository.saveOrUpdateProject(gameProject);
 	}
 }

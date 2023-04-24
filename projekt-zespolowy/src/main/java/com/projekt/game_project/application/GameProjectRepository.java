@@ -12,11 +12,11 @@
 
 package com.projekt.game_project.application;
 
+import com.projekt.game_project.domain.GameProject;
 import com.projekt.game_project.interfaces.GameProjectForm;
 
 
 public interface GameProjectRepository {
 
-	void saveProject(GameProjectForm gameProjectForm);
-	void updateProject(GameProjectForm gameProjectForm);
+	void saveOrUpdateProject(GameProject gameProject);
 }

@@ -14,18 +14,32 @@ package com.projekt.game_project.domain;
 
 import java.util.List;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 import org.springframework.util.Assert;
 
 
-@Entity
+@Entity(name = "game_projects")
 public class GameProject {
 
+	@Id
+	@GeneratedValue
+	@Column(updatable = false)
 	private Long id;
+
+	@Column(nullable = false)
 	private String title;
+
+	@Column(nullable = false)
 	private String shortDescription;
+
+	@Column(nullable = false)
 	private String longDescription;
+
+	@Column
 	private String gameUrl;
 
 	public GameProject(Long id, String title, String shortDescription, String longDescription, String gameUrl) {
