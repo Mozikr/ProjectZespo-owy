@@ -27,6 +27,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
 
 import com.projekt.game_project.application.GameProjectDto;
+import com.projekt.game_project.application.GameProjectListDto;
 import com.projekt.game_project.application.GameProjectQueries;
 import com.projekt.game_project.domain.GameProject;
 
@@ -78,7 +79,7 @@ public class GameProjectHibernateQueries implements GameProjectQueries {
 	}
 
 	@Override
-	public List<GameProjectDto> getAllProjectsDto() {
+	public List<GameProjectListDto> getAllProjectsDto() {
 
 		try (Session session = sessionFactory.openSession()) {
 
@@ -91,14 +92,9 @@ public class GameProjectHibernateQueries implements GameProjectQueries {
 			Query<GameProject> query = session.createQuery(criteriaQuery);
 
 			return query.getResultList().stream()
-				.map(gameProject -> new GameProjectDto(gameProject.getId(),
+				.map(gameProject -> new GameProjectListDto(gameProject.getId(),
 					gameProject.getTitle(),
 					gameProject.getShortDescription(),
-					gameProject.getLongDescription(),
-					gameProject.getGameUrl(),
-					gameProject.getPicture1Url(),
-					gameProject.getPicture2Url(),
-					gameProject.getPicture3Url(),
 					gameProject.getIconUrl()))
 				.collect(Collectors.toList());
 		}

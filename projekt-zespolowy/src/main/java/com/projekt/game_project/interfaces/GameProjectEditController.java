@@ -12,6 +12,8 @@
 
 package com.projekt.game_project.interfaces;
 
+import static com.projekt.game_project.interfaces.GameProjectListController.LIST_PATH;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -30,8 +32,8 @@ import com.projekt.game_project.application.GameProjectAppService;
 @RequestMapping(GameProjectEditController.EDIT_PATH)
 public class GameProjectEditController {
 
-	static final String EDIT_PATH = "gameProject-edit";
-	private static final String EDIT_VIEW = "/gameProjectEdit-view.html";
+	static final String EDIT_PATH = "/gameProject-edit";
+	private static final String EDIT_VIEW = "game-project-edit-view";
 
 	private static final String P_GAME_PROJECT_ID = "id";
 	private static final String M_GAME_PROJECT = "gameProject";
@@ -69,6 +71,6 @@ public class GameProjectEditController {
 
 		gameProjectAppService.saveOrUpdateProject(gameProjectForm);
 
-		return "redirect:" + EDIT_PATH;
+		return "redirect:" + LIST_PATH;
 	}
 }

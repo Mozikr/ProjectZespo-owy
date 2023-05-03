@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+<%@ taglib uri = "http://www.springframework.org/tags/form" prefix = "form"%>
 <html lang="en">
 <head>
   <title>Bootstrap Example</title>
@@ -8,7 +10,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="style.css"> 
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <nav class="navbar navbar-inverse">
@@ -17,7 +19,7 @@
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
+        <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#">Portfolio</a>
     </div>
@@ -37,13 +39,14 @@
 
 <div class="jumbotron">
   <div class="container text-center">
-    <h1>Szymon Mozol 
-    <small class="text-muted">portfolio</small>   
-  </h1>  
+    <h1>${game.title}
+  </h1>
     <p></p>
   </div>
 </div>
-<body>
+
+	<p> ${game.shortDescription} </p>
+
   <div class="icon-bar">
     <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
     <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
@@ -59,13 +62,6 @@
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-      <li data-target="#myCarousel" data-slide-to="4"></li>
-      <li data-target="#myCarousel" data-slide-to="5"></li>
-      <li data-target="#myCarousel" data-slide-to="6"></li>
-      <li data-target="#myCarousel" data-slide-to="7"></li>
-      <li data-target="#myCarousel" data-slide-to="8"></li>
-      <li data-target="#myCarousel" data-slide-to="9"></li>
     </ol>
 
 
@@ -73,7 +69,7 @@
     <div class="carousel-inner" role="listbox">
 
       <div class="item active">
-        <img src="Photos/Viking1.png" alt="Chania" width="450" height="300">
+        <img src="${game.picture1Url}" alt="Chania" width="450" height="300">
         <div class="carousel-caption">
           <h3></h3>
           <p></p>
@@ -81,15 +77,7 @@
       </div>
 
       <div class="item">
-        <img src="Photos/Ninja1.png" alt="Chania" width="450" height="300">
-        <div class="carousel-caption">
-          <h3></h3>
-          <p></p>
-        </div>
-      </div>
-    
-      <div class="item">
-        <img src="Photos/Void1.png" alt="Flower" width="450" height="300">
+        <img src="${game.picture2Url}" alt="Chania" width="450" height="300">
         <div class="carousel-caption">
           <h3></h3>
           <p></p>
@@ -97,52 +85,13 @@
       </div>
 
       <div class="item">
-        <img src="Photos/Hurry1.png" alt="Flower" width="450" height="300">
+        <img src="${game.picture3Url}" alt="Flower" width="450" height="300">
         <div class="carousel-caption">
           <h3></h3>
           <p></p>
         </div>
       </div>
 
-      <div class="item">
-        <img src="Photos/Viking2.png" alt="Flower" width="450" height="300">
-        <div class="carousel-caption">
-          <h3></h3>
-          <p></p>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="Photos/Ninja2.png" alt="Flower" width="450" height="300">
-        <div class="carousel-caption">
-          <h3></h3>
-          <p></p>
-        </div>
-      </div>
-  
-      <div class="item">
-        <img src="Photos/Void2.png" alt="Flower" width="450" height="300">
-        <div class="carousel-caption">
-          <h3></h3>
-          <p></p>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="Photos/Hurry2.png" alt="Flower" width="450" height="300">
-        <div class="carousel-caption">
-          <h3></h3>
-          <p></p>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="Photos/Viking4.png" alt="Flower" width="450" height="300">
-        <div class="carousel-caption">
-          <h3></h3>
-          <p></p>
-        </div>
-      </div>
     </div>
 
     <!-- Left and right controls -->
@@ -159,9 +108,9 @@
 
 </div><br><br>
 
-<footer class="container-fluid text-center">
-  <p>©2023 Szymon Mozol</p>
-</footer>
+<p> ${game.longDescription} </p>
+<br/><br/>
+
 
 </body>
 </html>

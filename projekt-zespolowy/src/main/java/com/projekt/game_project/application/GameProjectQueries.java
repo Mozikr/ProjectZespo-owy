@@ -19,5 +19,5 @@ public interface GameProjectQueries {
 
 	GameProjectDto getProjectDto(Long id);
 
-	List<GameProjectDto> getAllProjectsDto();
+	List<GameProjectListDto> getAllProjectsDto();
 }

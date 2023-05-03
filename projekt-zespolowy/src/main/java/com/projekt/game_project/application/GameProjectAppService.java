@@ -43,7 +43,7 @@ public class GameProjectAppService {
 		return gameProjectQueries.getProjectDto(id);
 	}
 
-	public List<GameProjectDto> getAllGameProjects() {
+	public List<GameProjectListDto> getAllGameProjects() {
 
 		return gameProjectQueries.getAllProjectsDto();
 	}

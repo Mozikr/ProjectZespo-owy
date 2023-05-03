@@ -2,7 +2,6 @@
 <!DOCTYPE html>
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 <%@ taglib uri = "http://www.springframework.org/tags/form" prefix = "form"%>
-<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <html lang="en">
 <head>
@@ -24,7 +23,7 @@
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
+        <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#">Portfolio</a>
     </div>
@@ -51,42 +50,81 @@
 
 <div class="jumbotron">
   <div class="container text-center">
-    <h1>Szymon Mozol 
-      <small class="text-muted">my projects</small>   
-    </h1>  
+    <h1>Project edit
+      <small class="text-muted">#${gameProject.id}</small>
+    </h1>
   </div>
 
-  
+
 </div>
 
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<div class="box">
-	<div class="container">
-		<div class="row">
 
-			<c:forEach items="${gameProjects}" var="game">
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+	<div class="container mt-5">
+	<a href="/gameProjects-list">Go back</a>
+      <form:form method="POST"
+                  action="/gameProject-edit" modelAttribute="gameProject">
 
-					<div class="box-part text-center">
+        <div class="form-group">
+          <form:input type="hidden" path="id" class="form-control"/>
+        </div>
 
-						<img src=${game.iconUrl} width="152" height="152">
+        <div class="form-group">
+        	<form:label path="title" >Title</form:label>
+        	<form:input path="title" class="form-control"/>
+        </div>
+
+        <div class="form-group">
+        	<form:label path="shortDescription" >Short description</form:label>
+        	<form:input path="shortDescription" class="form-control"/>
+        </div>
+
+        <div class="form-group">
+        	<form:label path="longDescription" >Long description</form:label>
+        	<form:textarea path="longDescription" class="form-control" rows="3"/>
+        </div>
+
+        <div class="form-group">
+        	<form:label path="gameUrl" >Game URL</form:label>
+        	<form:input path="gameUrl" class="form-control"/>
+        </div>
+
+        <fieldset class="form-group">
+
+          <legend>Picture URLs</legend>
+
+          <div class="form-group">
+
+            <div class="form-group">
+              <form:input path="picture1Url" class="form-control" placeholder="Picture 1 URL"/>
+            </div>
+
+            <div class="form-group">
+              <form:input class="form-control" path="picture2Url" placeholder="Picture 2 URL"/>
+            </div>
+
+            <div class="form-group">
+              <form:input class="form-control" path="picture3Url" placeholder="Picture 3 URL"/>
+            </div>
+
+          </div>
+        </fieldset>
+
+        <div class="form-group">
+        	<form:label path="iconUrl" >Icon URL</form:label>
+        	<form:input path="iconUrl" class="form-control"/>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Save</button>
+      </form:form>
+    </div>
 
 
-						<div class="title">
-							<h2>${game.title}</h2>
-						</div>
 
-						<div class="text">
-							<span>${game.shortDescription}</span>
-						</div>
 
-						<a href="#">Learn More</a>
 
-					</div>
-				</div>
 
-			</c:forEach>
+
 
 
 
