@@ -69,7 +69,11 @@ public class GameProjectHibernateQueries implements GameProjectQueries {
 				gameProject.getTitle(),
 				gameProject.getShortDescription(),
 				gameProject.getLongDescription(),
-				gameProject.getGameUrl());
+				gameProject.getGameUrl(),
+				gameProject.getPicture1Url(),
+				gameProject.getPicture2Url(),
+				gameProject.getPicture3Url(),
+				gameProject.getIconUrl());
 		}
 	}
 
@@ -91,7 +95,11 @@ public class GameProjectHibernateQueries implements GameProjectQueries {
 					gameProject.getTitle(),
 					gameProject.getShortDescription(),
 					gameProject.getLongDescription(),
-					gameProject.getGameUrl()))
+					gameProject.getGameUrl(),
+					gameProject.getPicture1Url(),
+					gameProject.getPicture2Url(),
+					gameProject.getPicture3Url(),
+					gameProject.getIconUrl()))
 				.collect(Collectors.toList());
 		}
 	}

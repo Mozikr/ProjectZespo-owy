@@ -42,22 +42,47 @@ public class GameProject {
 	@Column
 	private String gameUrl;
 
-	public GameProject(Long id, String title, String shortDescription, String longDescription, String gameUrl) {
+	@Column(name = "picture1_url")
+	private String picture1Url;
+
+	@Column(name = "picture2_url")
+	private String picture2Url;
+
+	@Column(name = "picture3_url")
+	private String picture3Url;
+
+	@Column
+	private String iconUrl;
+
+	public GameProject(Long id,
+		String title,
+		String shortDescription,
+		String longDescription,
+		String gameUrl,
+		String picture1Url,
+		String picture2Url,
+		String picture3Url,
+		String iconUrl) {
 
 		Assert.notNull(id, "id must not be null");
 		Assert.notNull(title, "title must not be null");
 		Assert.notNull(shortDescription, "shortDescription must not be null");
 		Assert.notNull(longDescription, "longDescription must not be null");
-		Assert.notNull(gameUrl, "gameUrl must not be null");
 
 		this.id = id;
 		this.title = title;
 		this.shortDescription = shortDescription;
 		this.longDescription = longDescription;
 		this.gameUrl = gameUrl;
+		this.picture1Url = picture1Url;
+		this.picture2Url = picture2Url;
+		this.picture3Url = picture3Url;
+		this.iconUrl = iconUrl;
 	}
 
-	public GameProject() {}
+	public GameProject() {
+
+	}
 
 	public Long getId() {
 
@@ -107,5 +132,45 @@ public class GameProject {
 	public void setGameUrl(String gameUrl) {
 
 		this.gameUrl = gameUrl;
+	}
+
+	public String getPicture1Url() {
+
+		return picture1Url;
+	}
+
+	public void setPicture1Url(String picture1Url) {
+
+		this.picture1Url = picture1Url;
+	}
+
+	public String getPicture2Url() {
+
+		return picture2Url;
+	}
+
+	public void setPicture2Url(String picture2Url) {
+
+		this.picture2Url = picture2Url;
+	}
+
+	public String getPicture3Url() {
+
+		return picture3Url;
+	}
+
+	public void setPicture3Url(String picture3Url) {
+
+		this.picture3Url = picture3Url;
+	}
+
+	public String getIconUrl() {
+
+		return iconUrl;
+	}
+
+	public void setIconUrl(String iconUrl) {
+
+		this.iconUrl = iconUrl;
 	}
 }

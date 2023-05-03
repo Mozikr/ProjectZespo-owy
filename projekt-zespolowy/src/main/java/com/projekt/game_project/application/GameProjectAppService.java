@@ -54,7 +54,11 @@ public class GameProjectAppService {
 			gameProjectForm.getTitle(),
 			gameProjectForm.getShortDescription(),
 			gameProjectForm.getLongDescription(),
-			gameProjectForm.getGameUrl());
+			gameProjectForm.getGameUrl(),
+			gameProjectForm.getPicture1Url(),
+			gameProjectForm.getPicture2Url(),
+			gameProjectForm.getPicture3Url(),
+			gameProjectForm.getIconUrl());
 
 		gameProjectRepository.saveOrUpdateProject(gameProject);
 	}

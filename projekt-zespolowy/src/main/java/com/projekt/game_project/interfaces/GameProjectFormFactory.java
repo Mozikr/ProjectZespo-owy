@@ -54,6 +54,10 @@ public class GameProjectFormFactory {
 			gameProjectDto.getTitle(),
 			gameProjectDto.getShortDescription(),
 			gameProjectDto.getLongDescription(),
-			gameProjectDto.getGameUrl());
+			gameProjectDto.getGameUrl(),
+			gameProjectDto.getPicture1Url(),
+			gameProjectDto.getPicture2Url(),
+			gameProjectDto.getPicture3Url(),
+			gameProjectDto.getIconUrl());
 	}
 }

@@ -34,6 +34,7 @@ public class GameProjectListController {
 
 	private static final String M_GAME_PROJECTS = "gameProjects";
 
+
 	private final GameProjectAppService gameProjectAppService;
 
 	@Autowired
