@@ -13,29 +13,8 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Portfolio</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="About.html">About</a></li>
-        <li><a href="Projects.html">Projects</a></li>
-        <li><a href="Contact.html">Contact</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+
+<jsp:include page="header.jsp"/>
 
 <div class="jumbotron">
   <div class="container text-center">
@@ -45,7 +24,10 @@
   </div>
 </div>
 
-	<p> ${game.shortDescription} </p>
+	<div class="container">
+	  <p class="lead text-center font-weight-bold">${game.shortDescription}</p>
+	</div>
+
 
   <div class="icon-bar">
     <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
@@ -108,7 +90,9 @@
 
 </div><br><br>
 
-<p> ${game.longDescription} </p>
+	<div class="container">
+	  <p class="lead text-justify font-weight-bold">${game.longDescription}</p>
+	</div>
 <br/><br/>
 
 

@@ -1,5 +1,5 @@
 /*
- * Created on 23-04-2023 13:00 by ajarzabe
+ * Created on 04-05-2023 23:39 by ajarzabe
  *
  * Copyright (c) 2001-2023 Unity S.A.
  * ul. Przedmiejska 6-10, 54-201 Wrocław, Poland
@@ -12,49 +12,41 @@
 
 package com.projekt.game_project.interfaces;
 
-import java.util.List;
+import static com.projekt.game_project.interfaces.GameProjectDeleteController.DELETE_URL;
+import static com.projekt.game_project.interfaces.GameProjectListController.LIST_PATH;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.Assert;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.projekt.game_project.application.GameProjectAppService;
-import com.projekt.game_project.application.GameProjectDto;
-import com.projekt.game_project.application.GameProjectListDto;
 
 
 @Controller
-@RequestMapping(GameProjectListController.LIST_PATH)
-public class GameProjectListController {
+@RequestMapping(DELETE_URL)
+public class GameProjectDeleteController {
 
-	static final String LIST_PATH = "/gameProjects-list";
-	static final String LIST_VIEW = "game-project-list-view";
-
-	private static final String M_GAME_PROJECTS = "gameProjects";
-
+	static final String DELETE_URL = "/gameProject-delete";
+	private static final String P_ID = "id";
 
 	private final GameProjectAppService gameProjectAppService;
 
 	@Autowired
-	GameProjectListController(GameProjectAppService gameProjectAppService) {
+	GameProjectDeleteController(GameProjectAppService gameProjectAppService) {
 
 		Assert.notNull(gameProjectAppService, "gameProjectAppService must not be null");
 
 		this.gameProjectAppService = gameProjectAppService;
 	}
 
-	@GetMapping()
-	String getListView() {
+	@GetMapping
+	String deleteProject(@RequestParam(P_ID) Long id) {
 
-		return LIST_VIEW;
-	}
+		gameProjectAppService.deleteGameProject(id);
 
-	@ModelAttribute(M_GAME_PROJECTS)
-	List<GameProjectListDto> getGameProjects() {
-
-		return gameProjectAppService.getAllGameProjects();
+		return "redirect:" + LIST_PATH;
 	}
 }

@@ -62,4 +62,10 @@ public class GameProjectAppService {
 
 		gameProjectRepository.saveOrUpdateProject(gameProject);
 	}
+
+	public void deleteGameProject(Long id) {
+
+		GameProject gameProject = gameProjectQueries.get(id);
+		gameProjectRepository.deleteGameProject(gameProject);
+	}
 }

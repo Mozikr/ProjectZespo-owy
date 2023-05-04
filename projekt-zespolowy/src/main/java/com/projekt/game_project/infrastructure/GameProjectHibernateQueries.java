@@ -48,34 +48,23 @@ public class GameProjectHibernateQueries implements GameProjectQueries {
 	@Override
 	public GameProjectDto getProjectDto(Long id) {
 
-		try (Session session = sessionFactory.openSession()) {
+		GameProject gameProject = get(id);
 
-			CriteriaBuilder criteriaBuilder = session.getCriteriaBuilder();
-			CriteriaQuery<GameProject> criteriaQuery = criteriaBuilder.createQuery(GameProject.class);
-			Root<GameProject> root = criteriaQuery.from(GameProject.class);
+		if (gameProject == null) {
 
-			criteriaQuery.select(root)
-				.where(criteriaBuilder.equal(root.get("id"), id));
-
-			Query<GameProject> query = session.createQuery(criteriaQuery);
-
-			GameProject gameProject = query.uniqueResult();
-
-			if (gameProject == null) {
-
-				return null;
-			}
-
-			return new GameProjectDto(gameProject.getId(),
-				gameProject.getTitle(),
-				gameProject.getShortDescription(),
-				gameProject.getLongDescription(),
-				gameProject.getGameUrl(),
-				gameProject.getPicture1Url(),
-				gameProject.getPicture2Url(),
-				gameProject.getPicture3Url(),
-				gameProject.getIconUrl());
+			return null;
 		}
+
+		return new GameProjectDto(gameProject.getId(),
+			gameProject.getTitle(),
+			gameProject.getShortDescription(),
+			gameProject.getLongDescription(),
+			gameProject.getGameUrl(),
+			gameProject.getPicture1Url(),
+			gameProject.getPicture2Url(),
+			gameProject.getPicture3Url(),
+			gameProject.getIconUrl());
+
 	}
 
 	@Override
@@ -98,5 +87,24 @@ public class GameProjectHibernateQueries implements GameProjectQueries {
 					gameProject.getIconUrl()))
 				.collect(Collectors.toList());
 		}
+	}
+
+	@Override
+	public GameProject get(Long id) {
+
+		try (Session session = sessionFactory.openSession()) {
+
+			CriteriaBuilder criteriaBuilder = session.getCriteriaBuilder();
+			CriteriaQuery<GameProject> criteriaQuery = criteriaBuilder.createQuery(GameProject.class);
+			Root<GameProject> root = criteriaQuery.from(GameProject.class);
+
+			criteriaQuery.select(root)
+				.where(criteriaBuilder.equal(root.get("id"), id));
+
+			Query<GameProject> query = session.createQuery(criteriaQuery);
+
+			return query.uniqueResult();
+		}
+
 	}
 }

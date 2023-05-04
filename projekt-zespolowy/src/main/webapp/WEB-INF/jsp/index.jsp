@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+<%@ page contentType="text/html; charset=UTF-8" %>
+<html>
 <head>
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
@@ -8,49 +10,22 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="style.css"> 
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Portfolio</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="About.html">About</a></li>
-        <li><a href="Projects.html">Projects</a></li>
-        <li><a href="Contact.html">Contact</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+
+<jsp:include page="header.jsp"/>
 
 <div class="jumbotron">
   <div class="container text-center">
-    <h1>Szymon Mozol 
-    <small class="text-muted">portfolio</small>   
-  </h1>  
+    <h1>Szymon Mozol
+    <small class="text-muted">portfolio</small>
+  </h1>
     <p></p>
   </div>
 </div>
 <body>
-  <div class="icon-bar">
-    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-    <a href="#" class="google"><i class="fa fa-google"></i></a>
-    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-    <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
-  </div>
+
 <div class="container">
   <br>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -73,7 +48,7 @@
     <div class="carousel-inner" role="listbox">
 
       <div class="item active">
-        <img src="Photos/Viking1.png" alt="Chania" width="450" height="300">
+        <img src="../Photos/Viking1.png" alt="Chania" width="450" height="300">
         <div class="carousel-caption">
           <h3></h3>
           <p></p>
@@ -81,15 +56,7 @@
       </div>
 
       <div class="item">
-        <img src="Photos/Ninja1.png" alt="Chania" width="450" height="300">
-        <div class="carousel-caption">
-          <h3></h3>
-          <p></p>
-        </div>
-      </div>
-    
-      <div class="item">
-        <img src="Photos/Void1.png" alt="Flower" width="450" height="300">
+        <img src="../Photos/Ninja1.png" alt="Chania" width="450" height="300">
         <div class="carousel-caption">
           <h3></h3>
           <p></p>
@@ -97,7 +64,7 @@
       </div>
 
       <div class="item">
-        <img src="Photos/Hurry1.png" alt="Flower" width="450" height="300">
+        <img src="../Photos/Void1.png" alt="Flower" width="450" height="300">
         <div class="carousel-caption">
           <h3></h3>
           <p></p>
@@ -105,7 +72,7 @@
       </div>
 
       <div class="item">
-        <img src="Photos/Viking2.png" alt="Flower" width="450" height="300">
+        <img src="../Photos/Hurry1.png" alt="Flower" width="450" height="300">
         <div class="carousel-caption">
           <h3></h3>
           <p></p>
@@ -113,15 +80,7 @@
       </div>
 
       <div class="item">
-        <img src="Photos/Ninja2.png" alt="Flower" width="450" height="300">
-        <div class="carousel-caption">
-          <h3></h3>
-          <p></p>
-        </div>
-      </div>
-  
-      <div class="item">
-        <img src="Photos/Void2.png" alt="Flower" width="450" height="300">
+        <img src="../Photos/Viking2.png" alt="Flower" width="450" height="300">
         <div class="carousel-caption">
           <h3></h3>
           <p></p>
@@ -129,7 +88,7 @@
       </div>
 
       <div class="item">
-        <img src="Photos/Hurry2.png" alt="Flower" width="450" height="300">
+        <img src="../Photos/Ninja2.png" alt="Flower" width="450" height="300">
         <div class="carousel-caption">
           <h3></h3>
           <p></p>
@@ -137,7 +96,23 @@
       </div>
 
       <div class="item">
-        <img src="Photos/Viking4.png" alt="Flower" width="450" height="300">
+        <img src="../Photos/Void2.png" alt="Flower" width="450" height="300">
+        <div class="carousel-caption">
+          <h3></h3>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="../Photos/Hurry2.png" alt="Flower" width="450" height="300">
+        <div class="carousel-caption">
+          <h3></h3>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="../Photos/Viking4.png" alt="Flower" width="450" height="300">
         <div class="carousel-caption">
           <h3></h3>
           <p></p>

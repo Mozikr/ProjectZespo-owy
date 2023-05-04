@@ -14,19 +14,34 @@ package com.projekt.menu.interfaces;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @Controller
-@RequestMapping(MenuController.MENU_URL)
 public class MenuController {
 
-	static final String MENU_URL = "/";
-	private static final String MENU_VIEW_NAME = "index.html";
+	private static final String MENU_URL = "/";
+	private static final String ABOUT_URL = "/about";
+	private static final String CONTACT_URL = "/contact";
 
-	@GetMapping
+	private static final String MENU_VIEW = "index";
+	private static final String ABOUT_VIEW = "about";
+	private static final String CONTACT_VIEW = "contact";
+
+	@GetMapping(MENU_URL)
 	String getMenuView() {
 
-		return MENU_VIEW_NAME;
+		return MENU_VIEW;
+	}
+
+	@GetMapping(ABOUT_URL)
+	String getAboutView() {
+
+		return ABOUT_VIEW;
+	}
+
+	@GetMapping(CONTACT_URL)
+	String getContactView() {
+
+		return CONTACT_VIEW;
 	}
 }

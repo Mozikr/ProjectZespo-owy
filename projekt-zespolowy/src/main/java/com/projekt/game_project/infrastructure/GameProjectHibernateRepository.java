@@ -44,4 +44,15 @@ public class GameProjectHibernateRepository implements GameProjectRepository {
 		session.getTransaction().commit();
 		session.close();
 	}
+
+	@Override
+	public void deleteGameProject(GameProject gameProject) {
+
+		Session session = sessionFactory.openSession();
+		session.beginTransaction();
+		gameProject = (GameProject) session.merge(gameProject);
+		session.delete(gameProject);
+		session.getTransaction().commit();
+		session.close();
+	}
 }
