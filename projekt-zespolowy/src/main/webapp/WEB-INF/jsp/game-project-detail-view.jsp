@@ -22,8 +22,12 @@
   </h1>
     <p></p>
   </div>
-  <a href="/gameProjects-list">Go back</a>
+
 </div>
+
+	<div class="container">
+	  <a href="/gameProjects-list">Go back</a>
+	</div>
 
 	<div class="container">
 	  <p class="lead text-center font-weight-bold">${game.shortDescription}</p>
@@ -85,8 +89,12 @@
 
 	<div class="container">
 	  <p class="lead text-justify font-weight-bold">${game.longDescription}</p>
+	  <br/>
+	  <a href="${game.gameUrl}">Visit ${game.title} website</a>
 	</div>
+
 <br/><br/>
+
 
 
 </body>

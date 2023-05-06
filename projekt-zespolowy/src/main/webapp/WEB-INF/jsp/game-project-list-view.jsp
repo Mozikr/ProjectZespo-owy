@@ -96,6 +96,9 @@
 	</div>
 </div>
 
+<footer class="container-fluid text-center">
+  <p>©2023 Szymon Mozol</p>
+</footer>
 
 </body>
 
