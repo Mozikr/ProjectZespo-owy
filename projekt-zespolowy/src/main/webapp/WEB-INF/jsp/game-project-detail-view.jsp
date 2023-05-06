@@ -22,20 +22,13 @@
   </h1>
     <p></p>
   </div>
+  <a href="/gameProjects-list">Go back</a>
 </div>
 
 	<div class="container">
 	  <p class="lead text-center font-weight-bold">${game.shortDescription}</p>
 	</div>
 
-
-  <div class="icon-bar">
-    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-    <a href="#" class="google"><i class="fa fa-google"></i></a>
-    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-    <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
-  </div>
 <div class="container">
   <br>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">

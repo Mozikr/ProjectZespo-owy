@@ -19,9 +19,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class MenuController {
 
-	private static final String MENU_URL = "/";
-	private static final String ABOUT_URL = "/about";
-	private static final String CONTACT_URL = "/contact";
+	public static final String MENU_URL = "/";
+	public static final String ABOUT_URL = "/about";
+	public static final String CONTACT_URL = "/contact";
 
 	private static final String MENU_VIEW = "index";
 	private static final String ABOUT_VIEW = "about";

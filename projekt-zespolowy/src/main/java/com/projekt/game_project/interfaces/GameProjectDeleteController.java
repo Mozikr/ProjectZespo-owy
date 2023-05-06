@@ -29,7 +29,7 @@ import com.projekt.game_project.application.GameProjectAppService;
 @RequestMapping(DELETE_URL)
 public class GameProjectDeleteController {
 
-	static final String DELETE_URL = "/gameProject-delete";
+	public static final String DELETE_URL = "/gameProject-delete";
 	private static final String P_ID = "id";
 
 	private final GameProjectAppService gameProjectAppService;

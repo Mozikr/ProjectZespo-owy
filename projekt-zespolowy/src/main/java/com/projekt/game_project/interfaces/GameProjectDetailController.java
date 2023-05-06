@@ -31,7 +31,7 @@ import com.projekt.game_project.application.GameProjectDto;
 @RequestMapping(DETAIL_PATH)
 public class GameProjectDetailController {
 
-	static final String DETAIL_PATH = "/gameProject-detail";
+	public static final String DETAIL_PATH = "/gameProject-detail";
 	private static final String DETAIL_VIEW = "game-project-detail-view";
 
 	private static final String M_GAME_PROJECT = "game";

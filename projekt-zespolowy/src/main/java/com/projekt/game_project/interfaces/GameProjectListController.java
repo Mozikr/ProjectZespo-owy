@@ -30,7 +30,7 @@ import com.projekt.game_project.application.GameProjectListDto;
 @RequestMapping(GameProjectListController.LIST_PATH)
 public class GameProjectListController {
 
-	static final String LIST_PATH = "/gameProjects-list";
+	public static final String LIST_PATH = "/gameProjects-list";
 	static final String LIST_VIEW = "game-project-list-view";
 
 	private static final String M_GAME_PROJECTS = "gameProjects";

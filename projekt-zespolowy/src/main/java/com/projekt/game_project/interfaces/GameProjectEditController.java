@@ -31,7 +31,7 @@ import com.projekt.game_project.application.GameProjectAppService;
 @RequestMapping(GameProjectEditController.EDIT_PATH)
 public class GameProjectEditController {
 
-	static final String EDIT_PATH = "/gameProject-edit";
+	public static final String EDIT_PATH = "/gameProject-edit";
 	private static final String EDIT_VIEW = "game-project-edit-view";
 
 	private static final String P_GAME_PROJECT_ID = "id";

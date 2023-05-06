@@ -25,13 +25,13 @@
   </div><br>
 
   <div class="mainAbout">
-    <img src="Photos/marker.png" alt="Placeholder" class="rounded-circle2" width="50" height="50">
+    <img src="/images/marker.png" alt="Placeholder" class="rounded-circle2" width="50" height="50">
     <p>Wrocław, ul.przykładowa 8/15</p>
 
-    <img src="Photos/envelope.png" alt="Placeholder" class="rounded-circle2" width="50" height="50">
+    <img src="/images/envelope.png" alt="Placeholder" class="rounded-circle2" width="50" height="50">
     <p>przykladowy@gmail.com</p>
 
-    <img src="Photos/phone-call.png" alt="Placeholder" class="rounded-circle2" width="50" height="50">
+    <img src="/images/phone-call.png" alt="Placeholder" class="rounded-circle2" width="50" height="50">
     <p>+48 000 000 000</p>
     </div>
 </div>

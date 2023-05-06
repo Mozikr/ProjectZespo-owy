@@ -48,7 +48,7 @@
     <div class="carousel-inner" role="listbox">
 
       <div class="item active">
-        <img src="../Photos/Viking1.png" alt="Chania" width="450" height="300">
+        <img src="/images/Viking1.png" alt="Chania" width="450" height="300">
         <div class="carousel-caption">
           <h3></h3>
           <p></p>
@@ -56,7 +56,7 @@
       </div>
 
       <div class="item">
-        <img src="../Photos/Ninja1.png" alt="Chania" width="450" height="300">
+        <img src="/images/Ninja1.png" alt="Chania" width="450" height="300">
         <div class="carousel-caption">
           <h3></h3>
           <p></p>
@@ -64,7 +64,7 @@
       </div>
 
       <div class="item">
-        <img src="../Photos/Void1.png" alt="Flower" width="450" height="300">
+        <img src="/images/Void1.png" alt="Flower" width="450" height="300">
         <div class="carousel-caption">
           <h3></h3>
           <p></p>
@@ -72,7 +72,7 @@
       </div>
 
       <div class="item">
-        <img src="../Photos/Hurry1.png" alt="Flower" width="450" height="300">
+        <img src="/images/Hurry1.png" alt="Flower" width="450" height="300">
         <div class="carousel-caption">
           <h3></h3>
           <p></p>
@@ -80,7 +80,7 @@
       </div>
 
       <div class="item">
-        <img src="../Photos/Viking2.png" alt="Flower" width="450" height="300">
+        <img src="/images/Viking2.png" alt="Flower" width="450" height="300">
         <div class="carousel-caption">
           <h3></h3>
           <p></p>
@@ -88,7 +88,7 @@
       </div>
 
       <div class="item">
-        <img src="../Photos/Ninja2.png" alt="Flower" width="450" height="300">
+        <img src="/images/Ninja2.png" alt="Flower" width="450" height="300">
         <div class="carousel-caption">
           <h3></h3>
           <p></p>
@@ -96,7 +96,7 @@
       </div>
 
       <div class="item">
-        <img src="../Photos/Void2.png" alt="Flower" width="450" height="300">
+        <img src="/images/Void2.png" alt="Flower" width="450" height="300">
         <div class="carousel-caption">
           <h3></h3>
           <p></p>
@@ -104,7 +104,7 @@
       </div>
 
       <div class="item">
-        <img src="../Photos/Hurry2.png" alt="Flower" width="450" height="300">
+        <img src="/images/Hurry2.png" alt="Flower" width="450" height="300">
         <div class="carousel-caption">
           <h3></h3>
           <p></p>
@@ -112,7 +112,7 @@
       </div>
 
       <div class="item">
-        <img src="../Photos/Viking4.png" alt="Flower" width="450" height="300">
+        <img src="/images/Viking4.png" alt="Flower" width="450" height="300">
         <div class="carousel-caption">
           <h3></h3>
           <p></p>

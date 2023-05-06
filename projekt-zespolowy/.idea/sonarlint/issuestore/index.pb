@@ -13,3 +13,5 @@ Jsrc/main/java/com/projekt/game_project/application/GameProjectListDto.java,8/0
 Msrc/main/java/com/projekt/game_project/interfaces/GameProjectFormFactory.java,9/2/923da394986a3511e796276f3abb1af4d4ef2888
 v
 Fsrc/main/java/com/projekt/game_project/interfaces/GameProjectForm.java,0/0/00b4c8fa4248b9c7e5170b50aa34496112264c67
+W
+'src/main/webapp/WEB-INF/jsp/contact.jsp,b/0/b071864e2dbd562d2043821ef2ad0178193c623d

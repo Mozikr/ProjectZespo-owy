@@ -26,7 +26,7 @@
   </div><br>
   <div class="mainAbout2">
     <div class="media-left">
-      <img src="../Photos/Me.JPG" class="media-object" width="300" height="300">
+      <img src="/images/Me.JPG" class="media-object" width="300" height="300">
     </div>
     <div class="media-body">
       <h4 class="media-heading">My Story</h4>
@@ -38,7 +38,7 @@
     </div>
   </div>
   <!-- <div class="mainAbout">
-    <img src="../Photos/me.JPG" alt="Placeholder" class="rounded-circle" width="250" height="250">
+    <img src="static/Photos/me.JPG" alt="Placeholder" class="rounded-circle" width="250" height="250">
     <p>
       Od października 2020 roku studiuję stacjonarnie na kierunku Informatyka w Wyższej Szkole Bankowej we Wrocławiu. W wolnym czasie tworzę swoje mniejsze gry w
       Unity oraz uczę się programować w takich językach jak C# i Java. Pracuję nad swoimi mniejszymi grami, które następnie udostępniam na Newgrounds oraz itch.io.

@@ -1,4 +1,4 @@
-
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -16,9 +16,16 @@
         <li><a href="/gameProjects-list">Projects</a></li>
         <li><a href="/contact">Contact</a></li>
       </ul>
+
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <sec:authorize access="!isAuthenticated()">
+                      <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </sec:authorize>
+                    <sec:authorize access="isAuthenticated()">
+                      <li><a href="/logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+        </sec:authorize>
       </ul>
+
     </div>
   </div>
 </nav>
