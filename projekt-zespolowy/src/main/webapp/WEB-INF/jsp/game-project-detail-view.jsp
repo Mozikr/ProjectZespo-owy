@@ -3,7 +3,7 @@
 <%@ taglib uri = "http://www.springframework.org/tags/form" prefix = "form"%>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>${game.title}</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -27,6 +27,7 @@
 
 	<div class="container">
 	  <a href="/gameProjects-list">Go back</a>
+	  <br/><br/>
 	</div>
 
 	<div class="container">

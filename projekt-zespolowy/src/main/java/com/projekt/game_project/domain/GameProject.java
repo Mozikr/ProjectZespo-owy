@@ -30,13 +30,13 @@ public class GameProject {
 	@Column(updatable = false)
 	private Long id;
 
-	@Column(nullable = false)
+	@Column
 	private String title;
 
-	@Column(nullable = false)
+	@Column
 	private String shortDescription;
 
-	@Column(nullable = false)
+	@Column
 	private String longDescription;
 
 	@Column
@@ -63,11 +63,6 @@ public class GameProject {
 		String picture2Url,
 		String picture3Url,
 		String iconUrl) {
-
-		Assert.notNull(id, "id must not be null");
-		Assert.notNull(title, "title must not be null");
-		Assert.notNull(shortDescription, "shortDescription must not be null");
-		Assert.notNull(longDescription, "longDescription must not be null");
 
 		this.id = id;
 		this.title = title;

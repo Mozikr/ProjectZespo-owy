@@ -30,22 +30,10 @@
     </div>
     <div class="media-body">
       <h4 class="media-heading">My Story</h4>
-      <p>Od października 2020 roku studiuję stacjonarnie na kierunku Informatyka w Wyższej Szkole Bankowej we Wrocławiu. W wolnym czasie tworzę swoje mniejsze gry w
-        Unity oraz uczę się programować w takich językach jak C# i Java. Pracuję nad swoimi mniejszymi grami, które następnie udostępniam na Newgrounds oraz itch.io.
-        Resztki wolnego czasu przeznaczam na różnego rodzaju aktywności fizyczne, granie w gry oraz czytanie. Jestem osobą zorganizowaną, odpowiedzialną, pełną zapału do
-        pracy jak i uczenia się nowych umiejętności. Najbardziej zależy mi na możliwości pracy z ludźmi którzy podzielają
-        moją pasję, od których mógłbym się wiele nauczyć oraz na tworzeniu rzeczy dzięki którym inni będą mogli spędzić swoje wolne chwile z uśmiechem na twarzy.</p>
+      <p>From October 2020, I have been studying Computer Science at the WSB Merito in Wrocław, Poland. In my free time, I enjoy creating small games in Unity and learning programming languages such as C# and Java. I work on my own games, which I then share on platforms like Newgrounds and itch.io.
+      During my spare time, I also engage in various physical activities, play games, and read. I am an organized, responsible person, full of enthusiasm for work and learning new skills. I am most interested in working with people who share my passion, from whom I can learn a lot, and creating things that others can enjoy and spend their free time with a smile on their face.</p>
     </div>
   </div>
-  <!-- <div class="mainAbout">
-    <img src="static/Photos/me.JPG" alt="Placeholder" class="rounded-circle" width="250" height="250">
-    <p>
-      Od października 2020 roku studiuję stacjonarnie na kierunku Informatyka w Wyższej Szkole Bankowej we Wrocławiu. W wolnym czasie tworzę swoje mniejsze gry w
-      Unity oraz uczę się programować w takich językach jak C# i Java. Pracuję nad swoimi mniejszymi grami, które następnie udostępniam na Newgrounds oraz itch.io.
-      Resztki wolnego czasu przeznaczam na różnego rodzaju aktywności fizyczne, granie w gry oraz czytanie. Jestem osobą zorganizowaną, odpowiedzialną, pełną zapału do
-      pracy jak i uczenia się nowych umiejętności. Najbardziej zależy mi na możliwości pracy z ludźmi którzy podzielają
-      moją pasję, od których mógłbym się wiele nauczyć oraz na tworzeniu rzeczy dzięki którym inni będą mogli spędzić swoje wolne chwile z uśmiechem na twarzy.</p>
-    </div> -->
 </div>
 </div>
 <body>

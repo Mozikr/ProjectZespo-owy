@@ -7,7 +7,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <html>
 <head>
-  <title>Bootstrap Example</title>
+  <title>Game projects</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -53,7 +53,7 @@
 
 					<div class="box-part text-center">
 
-						<img src=${game.iconUrl} width="152" height="152">
+						<img src=${game.iconUrl}>
 
 
 						<div class="title">
@@ -96,9 +96,6 @@
 	</div>
 </div>
 
-<footer class="container-fluid text-center">
-  <p>©2023 Szymon Mozol</p>
-</footer>
 
 </body>
 
