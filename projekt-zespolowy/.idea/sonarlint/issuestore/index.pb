@@ -17,8 +17,6 @@ Vsrc/main/java/com/projekt/game_project/infrastructure/GameProjectHibernateQueri
 Msrc/main/java/com/projekt/game_project/application/GameProjectRepository.java,3/2/3273afa241aad0b3abeef66784126fc5a53b5ca3
 }
 Msrc/main/java/com/projekt/game_project/application/GameProjectAppService.java,a/2/a26df51c25eb38171aca3da63daddf4923719cc4
-<
-build.gradle,f/0/f07866736216be0ee2aba49e392191aeae700a35
 ‚
 Rsrc/main/java/com/projekt/game_project/interfaces/GameProjectDeleteController.java,8/b/8b809bc8d48076abb5e2c6a470ed8c0e3c06ddb8
 ‚
